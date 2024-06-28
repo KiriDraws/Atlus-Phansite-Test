@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calendarstyle.css" />
+<style>
+@font-face {
+  font-family: Persona;
+  src: url(LinBiolinum_R.otf);
+}
+
+* {box-sizing: border-box;}
+body {font-family:Persona, Verdana, Geneva, Tahoma, sans-serif; margin:0; padding-top: 2%;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+table{
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  background-color: #e6e6e6;
+  opacity: 40%;
+  color: #2e2c2c;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Fixed Nav Bar*/
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+.nav ul{
+  list-style: none;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Persona, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nav .active, .dot:hover {
+  background-color: #08a31d;
+}
+</style>
+</head>
+<body style="background-color:#9af19a;">
+
+<ul class="nav">
+  <li><a href="index.html">News</a></li>
+  <li><a href="info.html">Franchise Info</a></li>
+  <li><a  class="active" href="calendar.html">Event Calendar</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="event-container">
+    <h3 class="year">2024</h3>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">8</div>
+          <div class="month">Jun</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Persona Live Tour 2024</h3>
+
+        <div class="event-description">
+          The Yokohama peformance of this year's concert will take place at KT Zepp Venue
+        </div>
+
+        <div class="event-timing">
+          <img src="images/time.png" alt="" /> 18:00
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">14</div>
+          <div class="month">Jun</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">SMT V: Vengeance</h3>
+
+        <div class="event-description">
+          The release of Shin Megami Tensei V: Vengeance, the enhanced edition of SMT V
+        </div>
+
+        <div class="event-timing">
+          <img src="images/time.png" alt="" /> 10:00
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">11</div>
+          <div class="month">Oct</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+        <h3 class="event-title">Metaphor: ReFantazio</h3>
+
+        <div class="event-description">
+          The release of Atlus' newest IP, Metaphor: ReFantazio
+        </div>
+
+        <div class="event-timing">
+          <img src="images/time.png" alt="" /> 8:00
+        </div>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
+

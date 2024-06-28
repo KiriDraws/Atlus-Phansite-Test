@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atlus Phansite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+  font-family: Persona;
+  src: url(LinBiolinum_R.otf);
+}
+
+* {box-sizing: border-box;}
+body {font-family:Persona, Verdana, Geneva, Tahoma, sans-serif; margin:0;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+table{
+  margin: auto;
+}
+
+/* Slideshow container*/
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  background-color: #e6e6e6;
+  opacity: 40%;
+  color: #2e2c2c;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.text:hover{
+  opacity: 90%;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  background-color: #e6e6e6;
+  opacity: 40%;
+  color: #2e2c2c;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Fixed Nav Bar*/
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+.nav ul{
+  list-style: none;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Persona, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nav .active, .dot:hover {
+  background-color: #00bbfa;
+}
+</style>
+</head>
+<body style="background-color:#79d7fd;">
+
+<ul class="nav">
+  <li><a class="active" href="index.html">News</a></li>
+  <li><a href="info.html">Franchise Info</a></li>
+  <li><a href="calendar.html">Event Calendar</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#79d7fd;text-align: center; text-shadow: 2px 2px 0px #f2f2f2;">
+  <h1>Welcome to the Atlus Phansite</h1>
+
+  <iframe style="max-width: 100%; max-height: 100%;" width="960" height="540"
+  src="https://www.youtube.com/embed/gRIkpLo42GM">
+  </iframe>
+  <h2>This is the latest trailer</h2>
+  <h2>Persona 3 Reload: Episode Aigis coming this September</h2>
+
+  <p>A few of the available screenshots are presented below</p>
+
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="answer_ss1.jpg" style="width:100%">
+      <div class="text">The members of SEES standing in the Abyss of Time</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="answer_ss2.jpg" style="width:100%">
+      <div class="text">Sneak peek at Metis' Theurgy</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="answer_ss3.jpg" style="width:100%">
+      <div class="text">Aigis summoning Orpheus</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="answer_ss4.jpg" style="width:100%">
+        <div class="text">Showcase of the Yasogami High outfits</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+    <br>
+
+    <div style="background-color: #00183e;padding: 12px; color: #f2f2f2;">
+    <table>
+      <tr>
+          <td>
+            <img  src="p3_reload.jpg" style="max-width: 100px; max-height: 100px;">
+          </td>
+          <td><a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank" style=" color: #f2f2f2;">
+            <b>Persona 3 Reload</b></a>
+          <p>Dive into the Dark Hour and awaken the depths of your heart.</p> 
+            <p>Persona 3 Reload is a captivating reimagining of the genre-defining RPG.</p> 
+            </td>
+      </tr>
+      <tr>
+        <td>
+          <img  src="p5_tactica.png" style="max-width: 100px; max-height: 100px;">
+        </td>
+        <td><a href="https://store.steampowered.com/app/2254740/Persona_5_Tactica/" target="_blank" style=" color: #f2f2f2;">
+        <b>Persona 5 Tactica</b></a>
+        <p>Join the Phantom Thieves as they lead an uprising of the heart!</p>
+        <p>Assemble an all-star team of heroes in a brand-new story.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img  src="smtv_vengeance.jpg" style="max-width: 100px; max-height: 100px;">
+      </td>
+      <td><a href="https://store.steampowered.com/app/1875830/Shin_Megami_Tensei_V_Vengeance/" target="_blank" style=" color: #f2f2f2;"> 
+        <b>SMT V: Vengeance</b></a>
+        <p>Embark on this definitive version of the critically acclaimed Shin Megami Tensei V.</p>
+        <p>Featuring new locations, demons, and choices to make that will dictate the fate of all existence.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img  src="metaphor.jpg" style="max-width: 100px; max-height: 100px;">
+    </td>
+    <td><a href="https://store.steampowered.com/app/2679460/Metaphor_ReFantazio/" target="_blank" style=" color: #f2f2f2;"> <b>Metaphor Re:Fantazio</b></a>
+        <p>The throne sits empty after the king's assassination.</p>
+        <p>With no heirs, the will of the late king decrees that the next monarch will be elected by the people.</p>
+    </td>
+</tr>
+    </table></div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Franchise Information</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+@font-face {
+  font-family: Persona;
+  src: url(LinBiolinum_R.otf);
+}
+            * {
+                box-sizing: border-box;
+            }
+            body {font-family:Persona; margin:0;}
+
+/*Fixed Nav Bar*/
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Persona;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nav .active {
+  background-color: #faa622;
+}
+/*nav end*/
+
+/*Search bar*/
+
+#myInput {
+
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 12px;
+  background-color: #ffffd7;
+  border: 1px solid #ffcf00;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ffcf00;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #ffffd7;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #ffcf00;
+}
+
+/*Search end*/
+
+/*Popup*/
+
+.box {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box a {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-image: url("static.png");
+     display: none;
+     align-items: center;
+      justify-content: center;
+      z-index:101;
+      overflow: auto;
+}
+
+.content {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 1em 2em;
+    border-radius: 4px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    z-index: 100;    
+}
+
+.modal:target {
+    display: flex;
+}
+
+/*Popup end*/
+
+</style>
+</head>
+<body style="background-color:#ffe52c;">
+
+<ul class="nav">
+  <li><a href="index.html">News</a></li>
+  <li><a class="active" href="info.html">Franchise Info</a></li>
+  <li><a href="calendar.html">Event Calendar</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div style="padding: 20px;margin-top: 30px; margin-left: 15%; margin-right: 15%;">
+
+    <h1 style="text-shadow: 2px 2px 0px #ffffff; text-align: center;">Atlus Games</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for games.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#p1">Persona 1</a></li>
+  <li><a href="#p2ie">Persona 2: Innocent Sin</a></li>
+  <li><a href="#p2ep">Persona 2: Eternal Punishment</a></li>
+
+  <li><a href="#p3">Persona 3</a></li>
+  <li><a href="#p4">Persona 4</a></li>
+  <li><a href="#p5">Persona 5</a></li>
+
+  <li><a href="#smt3">Shin Megami Tensei III: Nocturne</a></li>
+  <li><a href="#smt4">Shin Megami Tensei IV</a></li>
+  <li><a href="#smt5">Shin Megami Tensei V</a></li>
+</ul>
+</div>
+
+<div id="p1" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="p1.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: rgb(143, 39, 175)">
+            Persona 1
+        </h1>
+        <p>Release date: 20 September 1996</p>
+        <p>
+            Revelations: Persona is a 1996 role-playing video game developed and published by Atlus. 
+            It is the first entry in the Persona series, itself a subseries of the Megami Tensei franchise,
+             and the first role-playing entry in the series to be released in the west.
+        </p>
+        <p>
+            The story focuses on a group of high school students as they are confronted by a series of supernatural incidents. 
+            After playing a fortune-telling game, the group each gain the ability to summon Personas, the multiple selves within them. 
+            Using this power under the guidance of Philemon, a benevolent being representing humanity's subconscious, 
+            the group face off against multiple forces that threaten the world. 
+            Gameplay revolves around the characters navigating environments around their town and fighting enemies using their Personas. 
+            During the course of the game, the player can create new Personas for battle using spell cards gained in battle or by talking with enemies.
+
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="p2ie" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="p2ie.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: rgb(219, 112, 49)">
+            Persona 2: Innocent Sin
+        </h1>
+        <p>Release date: 24 June 1999</p>
+        <p>
+            Persona 2: Innocent Sin is a 1999 role-playing video game by Atlus for the PlayStation. 
+            It is the second entry in the Persona series, itself a subseries of the Megami Tensei franchise, 
+            and acts as a sequel to the original Persona.
+        </p>
+        <p>
+            Innocent Sin takes place in the fictional Sumaru City, focusing on a group of high school students from Seven Sisters High School. 
+            The protagonist, Tatsuya Suou, and a group of friends must confront a villainous figure called the Joker, 
+            who is causing the spread of reality-warping rumors through the city. The group are aided in their quest by their Personas, 
+            personified aspects of their personalities. The gameplay features turn-based battle gameplay, where characters use their Personas in battle against demons, 
+            and a separate Rumor system, where rumors spread around the city can influence events in the characters' favor.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="p2ep" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="p2ep.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: rgb(219, 112, 49)">
+            Persona 2: Eternal Punishment
+        </h1>
+        <p>Release date: 29 June 2000</p>
+        <p>
+            Persona 2: Eternal Punishment is a 2000 role-playing video game by Atlus for the PlayStation. 
+            It is chronologically the third installment in the Persona series, a subseries of the Megami Tensei franchise.
+        </p>
+        <p>
+            Eternal Punishment takes place in the fictional Japanese city of Sumaru, and is a direct sequel to Persona 2: Innocent Sin. 
+            Taking place a few months after Innocent Sin, the game follows reporter Maya Amano as she investigates the Joker Curse, 
+            a malign phenomenon where people's wishes and rumors are coming true and causing chaos. During her investigations, 
+            she and others who join her gain the ability to summon Personas, personified aspects of their personalities. 
+            The gameplay features turn-based battle gameplay, where characters use their Personas in battle against demons, 
+            and a separate Rumor system, where rumors spread around the city can influence events in the characters' favor, either bad or good.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="p3" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="p3.png" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: #79d7fd">
+            Persona 3
+        </h1>
+        <p>Release date: 13 July 2006</p>
+        <p>
+            Persona 3, released outside Japan as Shin Megami Tensei: Persona 3, 
+            is a 2006 role-playing video game developed by Atlus that is the fourth main installment in the Persona series, 
+            which is part of the larger Megami Tensei franchise.
+        </p>
+        <p>
+            In Persona 3, the player assumes the role of a high school student who joins the "Specialized Extracurricular Execution Squad" (SEES), 
+            a group of students investigating a temporal anomaly known as the "Dark Hour", during which its members can enter Tartarus, a tower containing monsters called Shadows. 
+            They battle the Shadows using a physical manifestation of their psyche called a Persona, which they summon by firing a gun-like object called an "Evoker" at their head. 
+            Persona 3 incorporates elements of role-playing and simulation games, as the game's protagonist progresses day by day through a school year and 
+            forms relationships that improve their Personas' strength in battle.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="p4" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="p4.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: #ffcf00">
+            Persona 4
+        </h1>
+        <p>Release date: 10 July 2008</p>
+        <p>
+            Persona 4, released outside Japan as Shin Megami Tensei: Persona 4, 
+            is a 2008 role-playing video game by Atlus. It is chronologically the fifth installment in the Persona series, 
+            itself a part of the larger Megami Tensei franchise.
+        </p>
+        <p>
+            The plot of Persona 4 was inspired by the work of mystery novelists owing to its murder mystery premise. 
+            The rural setting was based on a town on the outskirts of Mount Fuji and intended as a "'nowhere' place" and is the central setting to have 
+            players sympathize with the daily life of the characters. The developers added many in-game events to prevent the game from becoming stale. 
+            During localization, numerous alterations to Japanese cultural references were made to preserve the effect as much as possible. 
+            The release of Persona 4 in Japan was accompanied by merchandise such as character costumes and accessories. 
+            The game's music was primarily composed by Shoji Meguro, with vocals performed by Shihoko Hirata. The North American and European releases came with a soundtrack CD with selected music from the game.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="p5" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="p5.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: #d92323">
+            Persona 5
+        </h1>
+        <p>Release date: 15 September 2016</p>
+        <p>
+            Persona 5 is a 2016 role-playing video game developed by P-Studio and published by Atlus. 
+            The game is the sixth installment in the Persona series, itself a part of the larger Megami Tensei franchise.
+        </p>
+        <p>
+            Taking place in modern-day Tokyo, the story follows a high school student known by the codename Joker who transfers 
+            to a new school after he is falsely accused of assault and put on probation. Over the course of a school year, he and other students awaken to a special power, 
+            becoming a group of secret vigilantes known as the Phantom Thieves of Hearts. They explore the Metaverse, a supernatural realm born from humanity's subconscious desires, 
+            to steal malevolent intent from the hearts of adults and change their hearts. As with previous games in the series, the party battles enemies known as 
+            Shadows using physical manifestations of their psyche known as Personas. The game incorporates role-playing and dungeon crawling elements alongside social simulation scenarios.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="smt3" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="smt3.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: #e41f2e">
+            Shin Megami Tensei III: Nocturne
+        </h1>
+        <p>Release date: 20 February 2003</p>
+        <p>
+            Shin Megami Tensei III: Nocturne is a role-playing video game developed by Atlus for the PlayStation 2. 
+            It was published by Atlus in Japan and North America, and by Ghostlight in Europe. It is the third numbered entry in the Shin Megami Tensei series, 
+            the central series in the Megami Tensei franchise.
+        </p>
+        <p>
+            Nocturne follows a high school student in post-apocalyptic Tokyo, who is transformed into the demonic Demi-fiend after the world undergoes Conception, 
+            an apocalyptic event triggered by a sinister cult to enable the world's rebirth in a new form. With Tokyo transformed into a Vortex World filled with demons, 
+            the Demi-fiend becomes instrumental to the schemes of the Reasons, beings who seek to remake the world in their image, and Lucifer, the lord of demons. 
+            The gameplay uses a turn-based battle system based on exploiting weaknesses, and a Demon recruitment system allowing the player to recruit demons found in the Vortex World to fight alongside them.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="smt4" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="smt4.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: rgb(24, 23, 21)">
+            Shin Megami Tensei IV
+        </h1>
+        <p>Release date: 23 May 2013</p>
+        <p>
+            Shin Megami Tensei IV is a role-playing video game developed by Atlus for the Nintendo 3DS. 
+            It is part of the Shin Megami Tensei series, the central series of the Megami Tensei franchise, 
+            though no direct story connection exists to previous entries.
+        </p>
+        <p>
+            The story focuses on Flynn, a samurai who protects the medieval Kingdom of Mikado from attacks by hostile demons. 
+            When a mysterious Black Samurai begins transforming the population into demons, Flynn and three companions are sent to capture her. 
+            The pursuit of the Black Samurai drags Flynn and his comrades into a startling revelation and a power struggle between angelic and demonic forces.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="smt5" class="modal">
+    <div class="content">
+        <table>
+        <tr>
+        <td>
+            <img src="smt5.jpg" style="max-width: 100%; height:auto;">
+        </td>
+        <td style="text-align: left; padding: 20px">    
+        <h1 style="color: #2e3dee">
+            Shin Megami Tensei V
+        </h1>
+        <p>Release date: 11 November 2021</p>
+        <p>
+            Shin Megami Tensei V is a 2021 role-playing video game developed and published by Atlus for the Nintendo Switch. 
+            It is part of the Shin Megami Tensei series, the central series of the larger Megami Tensei franchise.
+        </p>
+        <p>
+            Set in modern-day Tokyo and the Netherworld, The protagonist, an ordinary high-school student, and his school friends Yuzuru Atsuta 
+            and Ichiro Dazai are caught up in a mysterious earthquake and transported to Da'at; an alternative apocalyptic version of Tokyo amidst 
+            an almighty battle between angels and demons. As he travels in this world, he shortly becomes overrun by demons and is nearly killed, 
+            only to be saved by a god-like being, Aogami. Together, they fuse into a Nahobino, a forbidden being that is neither human nor demon, 
+            but more so a deity. The protagonist traverses Da'at, clashes with a man named Shohei Yakumo and his demon partner Nuwa, and discovers 
+            a terminal that returns him and his friends to Tokyo. There, he learns that Yuzuru and his classmate Tao Isonokami are actually operatives of an 
+            international clandestine organization called Bethel focused on keeping humanity out of the war between angels and demons. 
+            Ichiro volunteers to join Bethel while the protagonist is conscripted due to his newfound powers as a Nahobino.
+        </p>
+        </td>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #000000;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+        </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="p3aux" class="modal">
+    <div class="content">
+        <h1 style="color: rgb(70, 191, 247)">
+            Persona 3
+        </h1>
+        <p>Release date: 13 Jul 2006</p>
+        <a
+            href="#"
+            style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #bdb1c0;
+                font-size: 30px;
+                text-decoration: none;
+            "
+            >&times;</a
+        >
+
+
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+
+</body>
+</html>
